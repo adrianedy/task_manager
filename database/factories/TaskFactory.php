@@ -18,11 +18,11 @@ class TaskFactory extends Factory
     {
         return [
             'user_id' => fake()->numberBetween(1, 11),
-            'status_id' =>fake()->numberBetween(1,4),
-            'title' =>fake()->title(),
+            'status_id' => fake()->numberBetween(1,4),
+            'title' => fake()->text(),
             'description' =>fake()->text(),
-            'note' =>fake()->text(),
-            'published_at' =>now(),
+            'note' => fake()->text(),
+            'published_at' => now(),
         ];
     }
 }

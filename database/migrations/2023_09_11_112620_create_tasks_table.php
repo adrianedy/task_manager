@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('status_id');
             $table->string('title');
             $table->text('description');
-            $table->text('note');
+            $table->text('note')->nullable();
             $table->timestamp('published_at');
             $table->timestamps();
             $table->softDeletes();
